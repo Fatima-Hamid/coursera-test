@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Module_3 </title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
@@ -16,18 +16,65 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
+<style>
+    ul{
+        list-style-type: none;
+        background-color: #b1afaf;
+        border: 5px solid black;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+    }
+    ul li a{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    ul li a:hover{
+        background-color: black;
+        color: aliceblue;
+        border: 0px;
+    }
+    ul li ul{
+        position: absolute;
+        display: none;
+    }
+    ul li ul li{
+        display: block;
+    }
+    ul li ul li a{
+        display: block;
+    }
+    ul li:hover ul{
+        display: block;
+    }
+</style>
 <body>
     <div class="container-fluid">
-    <div class="navbar">
-        <p> Fried Chicks </p>
-        <button class="btn btn-primary" id="btn">Menu</button>
-    </div> 
+        <div class="row">
+     <ul class="col-md-12 col-sm-12 col-xs-12">
+         <li>Food.LLc</li>
+         <li style="padding-left: 1050px;"><a href="#">Menu</a>
+        
+            <ul>
+                <li><a href="#">Chicken</a></li>
+                <li><a href="#">Beef</a></li>
+                <li><a href="#">Sushi</a></li>
+            </ul>
+
+        </li>
+     </ul>
+     </div>
     </div>     
-    <h1>
+    <h1 style="margin-bottom: 50px; margin-top: 50px; color: maroon" align="center">
         Our Menu
     </h1>
     <div class="container" id="main">
-        <div id="div-1">
+        <div class="row">
+        <div id="div-1" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h3 align="center">
                 chicken
             </h3> 
@@ -39,7 +86,7 @@
             <a href="module_3.html">back to top</a>
         </div>
 
-        <div id="div-2">
+        <div id="div-2" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h3 align="center">
                 beef
             </h3> 
@@ -51,7 +98,7 @@
             <a href="module_3.html">back to top</a>
         </div>
 
-        <div id="div-3">
+        <div id="div-3" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h3 align="center">
                 sushi
             </h3> 
@@ -62,6 +109,7 @@
             </p>
             <a href="module_3.html">back to top</a>
         </div>
+    </div>
     </div>
     <style>
         
@@ -91,27 +139,7 @@
             padding-bottom: 5px;
             margin-bottom: 20x;
         }
-        div.navbar{
-            height: 60px;
-            background-color: #b1afaf;
-            border: 5px solid black;
-        }
-        div.navbar p{
-            padding-left: 10px;
-            padding-top: 5px;
-            color: black;
-            font-weight: normal;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            
-        }
-
-        h1{
-            text-align: center;
-        }
-        
        
-      
-           
     </style>
 </body>
 </html>
